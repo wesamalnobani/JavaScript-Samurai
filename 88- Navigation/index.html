@@ -6,25 +6,26 @@
     
 </head>
 <body>
-    <!--before begin-->
     <div id='hello'>
-        <!--after begin-->
         <p>hello</p>
         <p id='p'>hello2</p>
-        <!--before end-->
     </div>
-    <!--after end-->
 
     <script>
-        let div = document.querySelector('div')
-        let p = document.createElement('p')
-        p.textContent = 'hello from p'
-        div.appendChild(p)
-        div.append(p)
-        div.insertBefore(p, document.getElementById('p'))
-        div.insertAdjacentElement('beforebegin', p)
-        div.insertAdjacentHTML('beforebegin', ???)
-        div.insertAdjacentText('beforebegin', ???)
+    childNodes
+    children
+    firstChild
+    firstElementChild
+    lastChild
+    lastElementChild
+    childElementCount
+    =====================
+    parentNode
+    parentElement
+    ======================
+    nextSibling
+    previousElementSibling
+
     </script>
 </body>
 </html>

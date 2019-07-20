@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click Me</button>
+
+    <script>
+        let btn = document.querySelector('button')
+
+        function btnClicked() {
+            console.log('clicked')
+        }
+        btn.onclick = btnClicked
+
+        //or
+
+        /*
+        btn.onclick = function() {
+            console.log('clicked')
+        }
+        */
+    </script>
+    
+</body>
+</html>
