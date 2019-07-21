@@ -5,7 +5,14 @@
     <title>Document</title>
 </head>
 <body>
+
+
     <button>Click Me</button>
+
+
+    <button onclick = "btnClicked2()">Click Me2</button>
+
+    <button onclick = "btnClicked5(event)">Click Me2</button>
 
     <script>
         let btn = document.querySelector('button')
@@ -15,10 +22,35 @@
         }
         btn.onclick = btnClicked
 
+        function btnClicked2() {
+            console.log('clicked2')
+        }
+
+        function btnClicked3(event) {
+            console.log(event)
+        }
+
+        function btnClicked4(e) {
+            e.preventDefault()
+        }
+
+        function btnClicked5(e) {
+            console.log(e)
+        }
+
+
         //or
 
         /*
         btn.onclick = function() {
+            console.log('clicked')
+        }
+        */
+
+        //or you can use arrow function
+
+        /*
+        btn.onclick = () => {
             console.log('clicked')
         }
         */
