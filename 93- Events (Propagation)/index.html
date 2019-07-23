@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div style='background: #f00; padding: 20px'>
+        <button>Click Here</button>
+    </div>
+    <script>
+        let div = document.querySelector('div')
+        let btn = document.querySelector('button')
+
+        div.onclick = function(e) {
+            //console.log('div clicked')
+            //console.log(e.target)
+            console.log(this)
+        }
+
+        btn.onclick = function(e) {
+            //e.stopPropagation()
+            console.log('btn cliked')
+        }
+    </script>
+</body>
+</html>
