@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1
+        /* 
+        setTimeout(() => {
+            console.log('Hello')
+        }, 2000)
+        */
+
+        // 2
+        /*
+        setTimeout((a, b) => {
+            console.log(a+b)
+        }, 2000, 5, 6)
+        */
+
+        // 3
+        console.log('Start')
+        let t = setTimeout((a, b) => {
+            console.log(a+b)
+        }, 2000, 5, 6)
+        console.log('End')
+        
+
+        //4
+        setTimeout(() => {
+            console.log('clear')
+            clearTimeout(t)
+        }, 1000)
+
+    </script>
+</body>
+</html>

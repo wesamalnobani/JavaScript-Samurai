@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        * Syntax Erorr
+        * Logical Erorr
+        * Runtime Erorr
+        */
+       
+        let x = 5
+        let y = 0
+        /*
+        if (y == 0) console.log("y Can't be Zero")
+        else console.log(x/y)
+        */
+
+        /*
+       function divide(x, y) {
+           if (y == 0) return "y Can't be Zero"
+           else return x / y
+       }
+       console.log(divide(x, y))
+       */
+
+       
+       try {
+            console.log(divide(x, y))
+            console.log('hello')      // if true work??
+       } catch(err) {
+            console.log(err.message)
+       } finally {
+            console.log('End')
+       }
+
+
+       function divide(x, y) {
+           if (y == 0) throw new Error('y cant be zero')
+           else return 'X/Y = ' + x / y
+       }
+       
+       
+    </script>
+</body>
+</html>
