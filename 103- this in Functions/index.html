@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Person(name, age) {
+            this.name = name
+            this.age = age
+        }
+
+        let p1 = {address: 'jordan'}
+
+
+        // call(this, all argument)
+
+        Person.call(p1, 'wesam', 36)
+        console.log(p1)
+
+
+        //apply(this, [all argument])
+        Person.apply(p1, ['wesam', 36])
+        console.log(p1)
+
+        //bind(this, )
+        let p1f = Person.bind(p1, 'wesam', 36)
+        p1f()
+        console.log(p1)
+
+        /*
+        function Person(name, age) {
+            p1.name = 'wesam'
+            p1.age = 36
+        }
+        */
+    </script>
+</body>
+</html>

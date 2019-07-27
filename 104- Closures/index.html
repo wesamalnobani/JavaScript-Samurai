@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // n = 5 
+
+        function startCount(n) {
+            return function() {
+                return ++n
+            }
+        } 
+        let counter = startCount(5) // n = 5
+        console.log(counter())  // n = 6
+        console.log(counter()) // n = 7
+        console.log(counter()) // n = 8
+        console.log(counter()) // n = 9
+        console.log(counter())  // n = 10
+    </script>
+</body>
+</html>
